@@ -85,7 +85,7 @@ int main(int argc, char *argv[]) {
         }
     } else { /* parent process: 키보드 입력 및 메시지 송신 담당 */
         char message[MAXLINE+1];
-        char line[MAXLINE+1];
+        char line[MAXLINE+10+1];
         printf("Send Message: ");
 
         while (fgets(message, MAXLINE, stdin) != NULL) {
