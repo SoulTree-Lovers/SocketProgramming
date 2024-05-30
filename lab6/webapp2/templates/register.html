@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>출석 등록</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>출석 등록</h1>
+    <form method="post">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">등록</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>출석부</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>출석부</h1>
+    <button onclick="location.href='{{ url_for('register') }}'">출석</button>
+    <button onclick="location.href='{{ url_for('view') }}'">조회</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>출석 조회</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>출석 조회</h1>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>날짜</th>
+        </tr>
+        {% for entry in attendance %}
+        <tr>
+            <td>{{ entry.name }}</td>
+            <td>{{ entry.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
